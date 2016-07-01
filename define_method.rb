@@ -6,8 +6,8 @@ class Hello
   end
 end
 
-Hello.add_new_method('add_numbers') do |x, y|
-  p x + y
+Hello.add_new_method('add_numbers') do |*args|
+  p args.inject(0) {|x, y| x + y }
 end
 
-Hello.new.add_numbers(1,2)
+Hello.new.add_numbers(1,2,3,4,5)
