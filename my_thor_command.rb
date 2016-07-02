@@ -9,3 +9,4 @@ class MyThorCommand < Thor
 end
 
 MyThorCommand.start
+# From command line run ./my_thor_command.rb foo "hello"
