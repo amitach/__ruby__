@@ -14,3 +14,14 @@ hash = array.inject({}) do |new_hash, (key, value)|
 end
 
 puts hash
+
+
+ puts "*" * 100
+h = ['hello', 'world'].inject({}) do |new_hash, word|
+  puts new_hash
+  new_hash[word] = word
+  puts word
+  new_hash
+end
+
+puts  h
