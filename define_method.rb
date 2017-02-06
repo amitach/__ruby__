@@ -1,6 +1,6 @@
 class Hello
   def self.add_new_method(name, &logic)
-    send(:define_method,name) do |*args|
+    send(:define_method, name) do |*args|
       logic.call(*args)
     end
   end
